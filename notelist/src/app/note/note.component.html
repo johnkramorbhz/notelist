@@ -1,0 +1,18 @@
+<div class="inputs">
+  <div>
+    <input class="inputs" type="text" [(ngModel)]="title"  />
+  </div>
+  <div>
+    <textarea class="inputs" cols="50" rows="20" [(ngModel)]="contents" [(ngModel)]="deltaContent"
+      ></textarea>
+  </div>
+
+  <div>
+    <button type="submit" (click)="onSave()" [disabled]="(this.title==='')" >
+      Save
+    </button>
+    <button type="submit" (click)="onRevert()" [disabled]="!deltaContent">
+      Revert
+    </button>
+  </div>
+</div>

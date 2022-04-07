@@ -1,0 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rootContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.LHSContent{
+    width: 44%;
+    height: 1000px;
+    padding: 3% 2%;
+    background-color: rgba(140, 184, 129, 0.388);
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+}
+.RHSContent{
+    width: 50%;
+}
